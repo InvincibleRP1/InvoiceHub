@@ -1,0 +1,6 @@
+.table:hover{
+cursor: pointer;
+}
+.table:visited{
+    color: blue;
+}

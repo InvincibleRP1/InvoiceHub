@@ -1,0 +1,12 @@
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th *ngFor="let header of headers">{{header.label}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let record of data">
+            <td routerLink="/projects" routerLinkActive="Active" *ngFor="let header of headers">{{record[header.key]}}</td>
+        </tr>
+    </tbody>
+</table>
